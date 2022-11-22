@@ -20,7 +20,7 @@ console.log(“listening…”);
 });
 //handling requests and responses by setting the Express framework
 app.get(“/”, function (req, res) {
-res.sendFile(path.join(__dirname, “landing.html”));
+res.sendFile(path.join(__dirname, “index.html”));
 });
 io.on(‘connection’, function (socket) { //returns socket which is a piece of data that talks with server and client
 console.log(“Someone has connected”);
